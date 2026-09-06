@@ -1,28 +1,30 @@
-# Simulación de Historia de Usuario
-
-**ID:** `HU-001-Registro`
-
+# Historia de Usuario: HU-001-familiar
 
 ## Descripción
+* **ID:** HU-001-familiar
+* **Como:** Responsable de la familia
+* **Necesito:** Agregar a mis familiares (cónyuge e hijo/as menores mediante su partida de nacimiento)
+* **Para:** Tenerlos bajo mi mismo registro
 
-* **Como:** Ciudadano  
-* **Quiero:** Registrarme con mi DUI para quedar como beneficiario del plan de refugios  
-* **Para:** Acceder de forma segura y recibir la asistencia adecuada ante emergencias  
-
+---
 
 ## Criterios de Aceptación
 
-1. **Diseño de la interfaz de registro:**  
-   Crear una pantalla donde el ciudadano ingrese su número de DUI y datos personales básicos.
+1. **Sección de Gestión Familiar:** 
+   * Crear una interfaz o vista de "Mi Núcleo Familiar" accesible directamente desde el perfil del usuario principal.
 
-2. **Validación de formato de DUI:**  
-   Implementar una validación estricta para asegurar que el número de DUI cumpla con el formato oficial de El Salvador (`00000000-0`: 8 dígitos, un guion y 1 dígito verificador).
+2. **Formulario de Registro de Cónyuge:** 
+   * Implementar campos estructurados para capturar los datos del cónyuge (Nombre completo, Documento de identidad y Vínculo).
 
-3. **Verificación de duplicidad:**  
-   Validar en la base de datos que el DUI ingresado no se encuentre previamente registrado en el plan de refugios.
+3. **Formulario de Registro de Hijos/as Menores:** 
+   * Incluir la opción de agregar hijos menores permitiendo adjuntar o ingresar los datos correspondientes de su partida de nacimiento.
 
-4. **Mensajes de error en credenciales inválidas:**  
-   Mostrar alertas claras en pantalla si el DUI es incorrecto, incompleto o ya está registrado.
+4. **Validación de Vínculo:** 
+   * Validar que los documentos ingresados no se encuentren duplicados o registrados previamente en otra cuenta principal del sistema.
 
-5. **Realizar pruebas funcionales:**  
-   Ejecutar pruebas de aceptación para verificar el registro exitoso del beneficiario y su almacenamiento en el sistema.
+5. **Mensajes de Confirmación/Error:** 
+   * Mostrar una alerta visual de éxito al registrar correctamente a un familiar, o un mensaje de error descriptivo si algún campo obligatorio o formato de documento es inválido.
+
+6. **Pruebas Funcionales:** 
+   * Realizar pruebas de flujo completo (añadir cónyuge + añadir hijo/a con partida de nacimiento) para asegurar que queden correctamente asociados al mismo registro del responsable.
+   
